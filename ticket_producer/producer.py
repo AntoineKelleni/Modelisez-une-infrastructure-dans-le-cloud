@@ -37,9 +37,9 @@ def generate_ticket() -> dict:
 
 
 def main():
-    print(f"[PRODUCER] Connexion à {BOOTSTRAP_SERVERS}")
-    print(f"[PRODUCER] Topic : {TOPIC_NAME}")
-    print(f"[PRODUCER] Nombre de tickets à envoyer : {MAX_MESSAGES}")
+    print(f"[PRODUCER] Connexion à {BOOTSTRAP_SERVERS}", flush=True)
+    print(f"[PRODUCER] Topic : {TOPIC_NAME}", flush=True)
+    print(f"[PRODUCER] Nombre de tickets à envoyer : {MAX_MESSAGES}", flush=True)
 
     producer = KafkaProducer(
         bootstrap_servers=BOOTSTRAP_SERVERS,
@@ -50,12 +50,11 @@ def main():
         ticket = generate_ticket()
         producer.send(TOPIC_NAME, ticket)
         producer.flush()
-        print(f"[PRODUCER] Ticket {i+1}/{MAX_MESSAGES} envoyé : {ticket}")
+        print(f"[PRODUCER] Ticket {i+1}/{MAX_MESSAGES} envoyé : {ticket}", flush=True)
         time.sleep(1)
 
-    print("[PRODUCER] Fin de l’envoi des tickets.")
+    print("[PRODUCER] Fin de l’envoi des tickets.", flush=True)
 
 
 if __name__ == "__main__":
     main()
-
