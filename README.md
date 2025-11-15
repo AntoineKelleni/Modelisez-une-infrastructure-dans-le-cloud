@@ -154,11 +154,9 @@ demande_evolution    51
 
 ## 7. Vidéo de démonstration
 
-Inclure ici le lien de la vidéo :
 
-```
-[[Lien vers la démonstration vidéo]](https://youtu.be/I837g0Q0vvA)
-```
+Une démonstration vidéo du pipeline ETL en action est disponible **[sur YouTube ICI en lien cliquable](https://youtu.be/I837g0Q0vvA)** 
+
 
 ## 8. Contenu du ZIP final
 
@@ -175,4 +173,5 @@ data/outputs/   (optionnel)
 
 Ce POC valide la faisabilité d’un pipeline temps réel basé sur Redpanda et PySpark, incluant ingestion, enrichissement, streaming et export.  
 Ce système constitue une base solide pour un futur système complet de gestion de tickets et d’analyse opérationnelle.
+
 
