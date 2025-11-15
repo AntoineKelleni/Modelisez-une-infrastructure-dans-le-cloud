@@ -1,4 +1,8 @@
-﻿# Gestion de tickets clients en temps réel  
+<p style="text-align: center;">
+  <img src="logo_OCR.jpg" alt="Logo Academy" width="100">
+</p>
+
+ # Gestion de tickets clients en temps réel  
 Redpanda · PySpark · Docker Compose
 
 ## 1. Contexte du projet
@@ -173,5 +177,6 @@ data/outputs/   (optionnel)
 
 Ce POC valide la faisabilité d’un pipeline temps réel basé sur Redpanda et PySpark, incluant ingestion, enrichissement, streaming et export.  
 Ce système constitue une base solide pour un futur système complet de gestion de tickets et d’analyse opérationnelle.
+
 
 
